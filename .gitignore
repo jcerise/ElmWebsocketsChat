@@ -1,0 +1,21 @@
+/doc/
+/libs/
+/lib/
+/.crystal/
+/.shards/
+
+# Elm
+# Distribution
+/elm-chat/dist/
+
+# elm-package generated files
+/elm-chat/elm-stuff
+
+# elm-repl generated files
+/elm-chat/repl-temp-*
+
+# Dependency directories
+/elm-chat/node_modules
+
+# Desktop Services Store on macOS
+/elm-chat/.DS_Store
