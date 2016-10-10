@@ -1,22 +1,23 @@
 # kemal-chat-elm
 
-TODO: Write a description here
-
-## Installation
-
-
-TODO: Write installation instructions here
-
+A simple example app using Kemal/Crystal and Elm, which exhibits websockets
 
 ## Usage
 
+From the root directory, run
+```bash
+crystal src/kemal-chat-elm.cr
+```
+Then, in the elm-chat directory,
+```bash
+elm make Main.elm
+```
+Followed by
+```bash
+elm reactor
+```
 
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+Finally, navigate to localhost:8000
 
 ## Contributing
 
@@ -28,4 +29,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) jcerise - creator, maintainer
+- [jcerise](https://github.com/[your-github-name]) jcerise - creator, maintainer
