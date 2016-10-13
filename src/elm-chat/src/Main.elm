@@ -44,7 +44,7 @@ update msg model =
       let
         message = model.userMessage
       in
-        { model | userMessage = ""} ! [WebSocket.send "ws://0.0.0.0:3000/chat" message]
+        { model | userMessage = ""} ! [WebSocket.send "ws://127.0.1.1:8888/chat" message]
 
     UpdateUserMessage message ->
       { model | userMessage = message} ! []
@@ -77,4 +77,4 @@ displayChatMessages chatMessages =
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-  WebSocket.listen "ws://0.0.0.0:3000/chat" NewChatMessage
+  WebSocket.listen "ws://127.0.1.1:8888/chat" NewChatMessage
